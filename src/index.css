@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-surface: #f9f9f8;
+    --color-surface-dim: #dadad9;
+    --color-surface-bright: #f9f9f8;
+    --color-surface-container-lowest: #ffffff;
+    --color-surface-container-low: #f3f4f3;
+    --color-surface-container: #eeeeed;
+    --color-surface-container-high: #e8e8e7;
+    --color-surface-container-highest: #e2e2e2;
+    --color-on-surface: #1a1c1c;
+    --color-on-surface-variant: #404942;
+    --color-outline: #707971;
+    --color-outline-variant: #c0c9c0;
+    --color-primary: #003820;
+    --color-primary-container: #0f5132;
+    --color-on-primary: #ffffff;
+    --color-on-primary-container: #84c39b;
+    --color-primary-fixed: #b0f1c7;
+    --color-primary-fixed-dim: #95d4ac;
+    --color-on-primary-fixed: #002111;
+    --color-secondary: #9b4500;
+    --color-secondary-fixed: #ffdbca;
+    --color-secondary-fixed-dim: #ffb68e;
+    --color-on-secondary-fixed: #331200;
+    --color-tertiary: #4d2600;
+  }
+
+  .dark {
+    --color-surface: #0f1512;
+    --color-surface-dim: #0f1512;
+    --color-surface-bright: #343b37;
+    --color-surface-container-lowest: #090f0d;
+    --color-surface-container-low: #171d1a;
+    --color-surface-container: #1b211e;
+    --color-surface-container-high: #252b28;
+    --color-surface-container-highest: #303633;
+    --color-on-surface: #dee4de;
+    --color-on-surface-variant: #bbcabf;
+    --color-outline: #86948a;
+    --color-outline-variant: #3c4a42;
+    --color-primary: #4edea3;
+    --color-primary-container: #10b981;
+    --color-on-primary: #003824;
+    --color-on-primary-container: #00422b;
+    --color-primary-fixed: #6ffbbe;
+    --color-primary-fixed-dim: #4edea3;
+    --color-on-primary-fixed: #002113;
+    --color-secondary: #ffb95f;
+    --color-secondary-fixed: #ffddb8;
+    --color-secondary-fixed-dim: #ffb95f;
+    --color-on-secondary-fixed: #2a1700;
+    --color-tertiary: #62dcad;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overscroll-behavior: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .font-arabic {
+    font-family: 'Amiri', 'Noto Naskh Arabic', 'Noto Serif', serif;
+  }
+
+  .font-quran {
+    font-family: 'Amiri', 'Noto Naskh Arabic', serif;
+  }
+
+  /* Hide scrollbars for clean aesthetic */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Material symbols adjustments */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.04);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2.5s ease-in-out infinite;
+}

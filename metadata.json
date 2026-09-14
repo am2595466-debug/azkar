@@ -1,0 +1,6 @@
+{
+  "name": "أذكار المسلم - Azkar Al-Muslim",
+  "description": "تطبيق أذكار المسلم الشامل للأذكار الصباحية والمسائية مع مشغل صوتي متكامل للقراء والمسبحة الإلكترونية.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

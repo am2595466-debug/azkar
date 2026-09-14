@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#002b1c"/>
+      <stop offset="50%" stop-color="#0f5132"/>
+      <stop offset="100%" stop-color="#00180f"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fae392"/>
+      <stop offset="50%" stop-color="#e0b84c"/>
+      <stop offset="100%" stop-color="#b8860b"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4edea3" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#4edea3" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background rounded rect -->
+  <rect width="512" height="512" rx="108" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle inner glow -->
+  <circle cx="256" cy="256" r="210" fill="url(#glow)"/>
+
+  <!-- Ornamental outer ring -->
+  <circle cx="256" cy="256" r="190" fill="none" stroke="url(#goldGrad)" stroke-width="3" stroke-dasharray="8 6" opacity="0.6"/>
+  <circle cx="256" cy="256" r="176" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Islamic Crescent -->
+  <path d="M 285 140 A 120 120 0 1 0 355 335 A 100 100 0 1 1 285 140 Z" fill="url(#goldGrad)"/>
+
+  <!-- 8-Pointed Star (Rub el Hizb) -->
+  <g transform="translate(305, 205) scale(0.62)">
+    <rect x="-35" y="-35" width="70" height="70" fill="url(#goldGrad)" rx="6"/>
+    <rect x="-35" y="-35" width="70" height="70" fill="url(#goldGrad)" rx="6" transform="rotate(45)"/>
+    <circle cx="0" cy="0" r="12" fill="#002b1c"/>
+  </g>
+
+  <!-- Islamic calligraphy / prayer beads hint at bottom -->
+  <g fill="url(#goldGrad)" opacity="0.85">
+    <circle cx="210" cy="375" r="7"/>
+    <circle cx="230" cy="382" r="7"/>
+    <circle cx="256" cy="385" r="8"/>
+    <circle cx="282" cy="382" r="7"/>
+    <circle cx="302" cy="375" r="7"/>
+  </g>
+</svg>
